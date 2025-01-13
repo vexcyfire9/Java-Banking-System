@@ -4,8 +4,8 @@ public class Banking
 {
 	public static void main(String[] args)
 	{
-		String password = "Jam";
-		String Username = "Peanut";
+		String password = "";
+		String Username = "";
 
 	 	double deposit = 0;
 	 	double withdraw = 0;
@@ -20,12 +20,12 @@ public class Banking
 		System.out.print("To get started please enter your user name > ");
 		String Input = scan.nextLine();
 
-		if(Input.equals("Peanut"))
+		if(Input.equals(""))
 		{
 			System.out.print("Welcome " + Username + " please enter the password to get into your account > ");
 			Input = scan.nextLine();
 
-			if(Input.equals("Jam"))
+			if(Input.equals(""))
 			{
 				Menu(balance, withdraw, deposit);
 			}
